@@ -20,7 +20,7 @@ const PostDetail = () => {
         const fetchPost = async () => {
             try {
                 // Fetch a single post by its ID
-                const response = await fetch(`${import.meta.env.VITE_STRAPI_URL}/api//api/posts/${id}`);
+                const response = await fetch(`https://aiden-portfolio-backend.onrender.com/api//api/posts/${id}`);
                 if (!response.ok) {
                     throw new Error('Post not found. Contact us if the issue persists.');
                 }

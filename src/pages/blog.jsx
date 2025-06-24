@@ -48,7 +48,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch('${import.meta.env.VITE_STRAPI_URL}/api/posts');
+                const response = await fetch('https://aiden-portfolio-backend.onrender.com/api/posts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok. Is your Strapi server running?');
                 }
