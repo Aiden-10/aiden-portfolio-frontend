@@ -1,9 +1,7 @@
 /* --- App.css (Global Styles) --- */
-/* This file should be imported into App.jsx */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Define color variables and basic styles for your entire app */
 :root {
   --bg-dark: #111827;
   --bg-medium: #1f2937;
@@ -15,7 +13,6 @@
   --white: #ffffff;
 }
 
-/* Basic Reset & Body Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,10 +48,6 @@ body {
   }
 }
 
-/* --- Home.css (Component-Specific Styles) --- */
-/* This file should be imported into Home.jsx */
-
-/* Header */
 .header {
   padding: 1rem;
   position: sticky;
@@ -138,7 +131,7 @@ body {
 .hero {
   text-align: center;
   padding: 5rem 0;
-  border-top: none; /* First section doesn't need a top border */
+  border-top: none; 
 }
 .hero-title {
   font-size: 3rem;
@@ -275,13 +268,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(17, 24, 39, 0.6); /* Semi-transparent dark background */
+  background-color: rgba(17, 24, 39, 0.6); 
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Hidden by default */
+  opacity: 0; 
   transition: opacity 0.3s ease-in-out;
-  cursor: pointer; /* Change cursor to indicate it's clickable */
+  cursor: pointer; 
 }
 
 .project-card:hover .project-overlay {
@@ -342,6 +335,7 @@ body {
     border-radius: 0.5rem;
     text-decoration: none;
     transition: transform 0.3s, opacity 0.3s;
+    margin-bottom: 1.5rem;
 }
 .contact-button:hover {
     opacity: 0.9;
@@ -349,6 +343,47 @@ body {
     transform: scale(1.15); 
     border-color: var(--accent);
 }
+
+.social-circle-button {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center; 
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    margin-inline: 1rem;
+    color: white; 
+    font-size: 1.5em;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.social-circle-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Specific colors for social circle buttons (same as before) */
+.social-circle-button.linkedin { background-color: #0077B5; }
+.social-circle-button.linkedin:hover { background-color: #005582; }
+.social-circle-button.instagram { background-color: #E4405F; }
+.social-circle-button.instagram:hover { background-color: #c42645; }
+.social-circle-button.twitter { background-color: #1DA1F2; }
+.social-circle-button.twitter:hover { background-color: #0f85d3; }
+.social-circle-button.github { background-color: #333; }
+.social-circle-button.github:hover { background-color: #181818; }
+
+
+/* NEW: Style for the social logo images inside the buttons */
+.social-logo-icon {
+    width: 60%; 
+    height: 60%; 
+    object-fit: contain; 
+    filter: invert(100%); 
+}
+
+
 
 /* Footer */
 .footer {

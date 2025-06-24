@@ -20,9 +20,9 @@
     color: #f87171;
 }
 
-/* Styles for the main article content */
+
 .post-article {
-    max-width: 1200px; /* Optimal width for reading */
+    max-width: 1200px; 
     margin: 2rem auto;
     padding: 2rem;
     background-color: var(--bg-medium);
@@ -44,7 +44,7 @@
     margin-bottom: .75rem;
 }
 
-/* This targets the content rendered by ReactMarkdown */
+
 .post-detail-content {
     font-size: 1.125rem;
     line-height: 1.75;
