@@ -308,6 +308,11 @@ body {
   text-align: center;
 }
 
+.overlay-text:hover {
+  color: var(--accent);
+  border: 3px solid var(--accent);
+}
+
 /* Contact Section */
 .contact-section {
     text-align: center;
