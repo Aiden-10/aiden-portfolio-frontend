@@ -20,7 +20,7 @@ const PostDetail = () => {
         const fetchPost = async () => {
             try {
                 // Fetch a single post by its ID
-                const response = await fetch(`http://localhost:1337/api/posts/${id}`);
+                const response = await fetch(`${import.meta.env.VITE_STRAPI_URL}/api//api/posts/${id}`);
                 if (!response.ok) {
                     throw new Error('Post not found. Contact us if the issue persists.');
                 }
@@ -72,7 +72,6 @@ const PostDetail = () => {
                         <ReactMarkdown
                             remarkPlugins={[remarkGfm]}
                             components={{
-                                // The _node parameter is now correctly used by the function signature
                                 code({inline, className, children, ...props}) {
                                     const match = /language-(\w+)/.exec(className || '');
                                     return !inline && match ? (

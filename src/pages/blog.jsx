@@ -42,14 +42,13 @@ const Blog = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
 
-    // --- State for Pagination ---
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(5); // You can change this number
 
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch('http://localhost:1337/api/posts');
+                const response = await fetch('${import.meta.env.VITE_STRAPI_URL}/api/posts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok. Is your Strapi server running?');
                 }
@@ -66,11 +65,11 @@ const Blog = () => {
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
-        setCurrentPage(1); // Reset to first page on new search
+        setCurrentPage(1); 
     };
     const handleCategoryChange = (event) => {
         setSelectedCategory(event.target.value);
-        setCurrentPage(1); // Reset to first page on new filter
+        setCurrentPage(1); 
     };
 
     const filteredPosts = posts.filter(post => {
@@ -85,7 +84,7 @@ const Blog = () => {
 
     const allCategories = [...new Set(posts.flatMap(post => post.tags || []))];
 
-    // --- Pagination Calculation ---
+    
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
