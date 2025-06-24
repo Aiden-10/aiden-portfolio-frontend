@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const projectsData = [
     {
@@ -55,9 +56,12 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="project-overlay">
+                            <Link to="/post/yycbwp5emmlg2ips9slormr8" >
+                                <div className="project-overlay">
                                     <span className="overlay-text">Read More...</span>
-                            </div>
+                                </div>
+                            </Link>
+                            
                         </div>
                     ))}
                 </div>
