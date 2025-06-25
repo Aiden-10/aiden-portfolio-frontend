@@ -1,5 +1,3 @@
-Of course, here is the provided text with Markdown styling:
-
 # Aiden's Portfolio - Frontend
 
 This repository contains the source code for my personal portfolio and blog, built with React. This site fetches project and blog post data from a headless Strapi CMS and displays it in a clean, responsive interface.
