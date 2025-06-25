@@ -4,7 +4,7 @@ const About = () => (
     <section id="about" className="section">
         <div className="container about-grid">
             <div className="about-image-wrapper">
-                <img src="https://placehold.co/600x600/1f2937/d1d5db?text=AS" alt="Aiden Portrait" className="about-image" />
+                <img src="../../public/images/boy.png" alt="Aiden Portrait" className="about-image" />
             </div>
             <div className="about-content">
                 <h2 className="about-title">About Me</h2>
