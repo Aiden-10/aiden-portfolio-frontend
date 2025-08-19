@@ -6,7 +6,7 @@ const Hero = () => (
             Aiden Slabiak<br /> <span className="accent-color">CS Student & Aspiring Engineer</span>
         </h1>
         <p className="hero-subtitle">
-            I enjoy building and learning low-level software and reverse engineering. I build what most developers won’t touch.
+            I enjoy working on low-level software and reverse engineering, tackling challenges that many developers avoid.
         </p>
     </section>
 );

@@ -3,29 +3,32 @@ import { Link } from 'react-router-dom';
 
 const projectsData = [
     {
-        title: "Forum Site",
+        id: "ravshdajkfhbidvglohe1cap",
+        title: "Full-Stack Discussion Platform",
         image: "https://placehold.co/600x400/0ea5e9/ffffff?text=Project+1",
-        tags: ["Full-Stack", "Next.js", "Auth","MongoDB"],
+        tags: ["Full-Stack", "React", "Auth","Firebase"],
         description: `
             <p>
                 A full-featured forum platform where users can create threads, post replies, and vote on content.
-                Built with Next.js, MongoDB, and JWT-based authentication. Designed with responsive UI using Tailwind CSS.
+                Built with React, Firebase, and realtime authentication.
             </p>
         `
     },
     {
-        title: "C++ Graphical Engine",
+        id: "wayt5vyn32a4r8qiyqsv74n8",
+        title: "Direct3D 2D Renderer / GUI Engine",
         image: "https://placehold.co/600x400/10b981/ffffff?text=Project+2",
-        tags: ["C++", "Direct3D", "Game Dev", "Graphics"],
+        tags: ["C++", "Direct3D11", "Graphics", "GUI"],
         description: `
             <p>
-                A lightweight 2D and 3D rendering engine built with C++ and Direct3D. Features sprite rendering, scene management,
-                input handling, and asset loading. Designed as a foundation for real-time games and interactive applications.
+                A lightweight 2D rendering engine built with C++ and Direct3D. Features sprite rendering, scene management,
+                input handling, and asset loading. Designed as a foundation for interactive applications.
             </p>
         `
     },
     {
-        title: "Memory Scanner",
+        id: "waoar9zew0uxldv1k6w9yyq1",
+        title: "DMA Memory Analysis Tool",
         image: "https://placehold.co/600x400/8b5cf6/ffffff?text=Project+3",
         tags: ["C++", "Windows API", "Systems Programming"],
         description: `
@@ -55,7 +58,7 @@ const Projects = () => {
 
                            
 
-                            <Link to="/post/c4ep84lexrgsmr3ajsrzccuh" >
+                            <Link to={`/post/${project.id}`}>
                                 <div className="project-overlay">
                                     <span className="overlay-text">Read More...</span>
                                 </div>

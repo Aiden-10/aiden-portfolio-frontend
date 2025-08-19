@@ -8,7 +8,7 @@ const Header = () => (
             <nav className="nav">
                 
             </nav>
-            <Link to="/blog" className="cta-button">Blog</Link>
+            <Link to="/blog" className="cta-button">Read More</Link>
         </div>
     </header>
 );

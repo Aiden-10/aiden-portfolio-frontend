@@ -9,15 +9,16 @@ const About = () => (
             <div className="about-content">
                 <h2 className="about-title">About Me</h2>
                 <p className="about-text">
-                    Hey! I'm Aiden, a Computer Science student at The University of Alabama. I'm deeply interested in low-level systems programming, reverse engineering, and embedded systems. 
-                    I enjoy building tools like memory scanners, UEFI/driver interfaces, and voice-controlled automation using kernel-level components.
+                    Hi, I'm Aiden, a Computer Science student at The University of Alabama
+                    with a focus on low-level systems and reverse engineering. I'm passionate
+                    about creating software, particularly within the Windows ecosystem. 
                 </p>
                 <div className="skills-container">
                     <span className="skill-tag">C/C++</span>
                     <span className="skill-tag">Python</span>
+                    <span className="skill-tag">Game Hacking</span>
                     <span className="skill-tag">Reverse Engineering</span>
                     <span className="skill-tag">Windows Internals</span>
-                    <span className="skill-tag">Embedded Systems</span>
                 </div>
             </div>
         </div>
