@@ -19,6 +19,7 @@ const About = () => (
                     <span className="skill-tag">Game Hacking</span>
                     <span className="skill-tag">Reverse Engineering</span>
                     <span className="skill-tag">Windows Internals</span>
+                    <span className="skill-tag">STEM Path to MBA</span>
                 </div>
             </div>
         </div>
